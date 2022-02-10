@@ -88,6 +88,7 @@ main{
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
+    padding: 5vh 0 10vh 0;
 }
 .user-cam-wrapper{
     width: calc(100% / 8);
@@ -95,6 +96,9 @@ main{
     margin: 2px;
     overflow: hidden;
     position: relative;
+}
+.user-cam-wrapper img{
+    width: 100%;
 }
 .user-name{
     position: absolute;
