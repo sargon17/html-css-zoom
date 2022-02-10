@@ -5,15 +5,20 @@
   --bg-color-clear-grey: #4a4a4a;
   --bg-color-clear-grey-hover: #6a6a6a;
   --main-text-color: #ffffff;
+  --main-text-color-hover: #dfdfdf;
   --zoom-green: #4bc800;
   --zoom-red: #d10e26;
 }
 
 /* general stiling */
 * {
-  font-family: "Montserrat" Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: var(--main-text-color);
-  font-size: 16px;
+  font-size: 14px;
+}
+h3{
+    font-weight: 500;
+    margin: .2em 0 ;
 }
 
 body {
@@ -28,6 +33,11 @@ button{
     cursor: pointer;
     background: transparent;
     padding: 1em .4em;
+    word-wrap: none;
+}
+button:hover{
+    background-color: var(--bg-color-gray-hover);
+    border-radius: 0;
 }
 /* / general stiling */
 
@@ -38,6 +48,7 @@ button{
 }
 .sml-grey-btn:hover{
     background-color: var(--bg-color-clear-grey-hover);
+    border-radius: 5px;
 }
 /*  / reusable component */
 
@@ -50,8 +61,8 @@ button{
     align-items: center;
 }
 
-.font-size-26{
-    font-size: 26px;
+.font-size-24{
+    font-size: 24px;
 }
 
 /* / reusable stiling */
@@ -76,14 +87,40 @@ button{
     left: 0;
     width: 100%;
     background-color: var(--bg-color-gray);
+    justify-content: space-between;
+    flex-grow: 1;
 }
+
 .bottom-controls li {
     padding: 0 0.5em;
 }
 .bottom-controls li:hover{
     background-color: var(--bg-color-gray-hover);
 }
+.bottom-controls li:hover *{
+    color: var(--main-text-color-hover);
+}
+.bottom-controls button:hover i{
+    color: var(--zoom-green);
+}
 
+.central-nav{
+    justify-content: center;
+    flex-grow: 2;
+}
+.central-nav li{
+    flex-grow: 1;
+}
+
+.end-btn{
+    justify-content: flex-end;
+}
+.end-btn button{
+    padding: 1em 1em;
+}
+.end-btn button:hover *{
+    color: var(--zoom-red);
+}
 
 
 
