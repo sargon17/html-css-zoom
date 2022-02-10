@@ -75,6 +75,7 @@ button:hover{
     position: fixed;
     right: 0;
     top: 0;
+    z-index: 1;
 }
 .top-controls li {
   margin: .2em;
@@ -90,17 +91,24 @@ main{
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
-    padding: 5vh 0 10vh 0;
+    padding: 5vh 0 15vh 0;
+    
 }
 .user-cam-wrapper{
     width: calc(100% / 8);
+    max-width: 225px;
+    min-width: 125px;
     height: calc(100% / 5);
+    max-height: 150px;
     margin: 2px;
     overflow: hidden;
     position: relative;
 }
+
 .user-cam-wrapper img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .user-name{
     position: absolute;
@@ -130,6 +138,11 @@ main{
     width: 100%;
     background-color: var(--bg-color-gray);
     justify-content: space-between;
+    flex-grow: 1;
+    z-index: 1;
+}
+.bottom-controls nav,
+.bottom-controls .end-btn{
     flex-grow: 1;
 }
 
@@ -173,3 +186,29 @@ main{
 }
 
 /* ------ /  BOTTOM CONTOLS ------  */
+
+@media  screen and (max-width: 1250px) {
+    *{
+        font-size: 12px;
+    }
+    .main{
+        align-content: flex-start;
+    }
+    .user-cam-wrapper{
+        width: calc(100% / 8);
+        height: calc(90% / 6);
+    }  
+
+}
+@media  screen and (max-width: 1000px) {
+    #invite-btn,
+    #breakout{
+        display: none;
+    }
+    .font-size-24{
+        font-size: 16px;
+    }
+    .small-screen{
+        display: none;
+    }
+}
