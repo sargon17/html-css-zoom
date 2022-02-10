@@ -1,6 +1,7 @@
 :root {
   --bg-color-black: #000000;
   --bg-color-gray: #222222;
+  --bg-color-gray-hover: #424242;
   --bg-color-clear-grey: #4a4a4a;
   --bg-color-clear-grey-hover: #6a6a6a;
   --main-text-color: #ffffff;
@@ -18,30 +19,79 @@
 body {
   background-color: var(--bg-color-black);
   height: 100vh;
+  overflow: hidden;
+}
+
+
+
+button{
+    cursor: pointer;
+    background: transparent;
+    padding: 1em .4em;
 }
 /* / general stiling */
 
-
 /* reusable component */
 .sml-grey-btn {
-  background-color: var(--bg-color-clear-grey);
-  padding: 0.3em 0.5em;
+    background-color: var(--bg-color-clear-grey);
+    padding: 0.3em 0.5em;
 }
 .sml-grey-btn:hover{
     background-color: var(--bg-color-clear-grey-hover);
 }
 /*  / reusable component */
 
+/* reusable stiling */
+.flex-component{
+    display: flex;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.font-size-26{
+    font-size: 26px;
+}
+
+/* / reusable stiling */
+
+
 /* ******** TOP CONTOLS ******** */
 .top-controls {
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-.top-controls ul {
-  display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
 }
 .top-controls li {
   margin: .2em;
 }
 /* ******** / TOP CONTOLS ******** */
+
+
+/* ******** BOTTOM CONTOLS ******** */
+.bottom-controls{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color-gray);
+}
+.bottom-controls li {
+    padding: 0 0.5em;
+}
+.bottom-controls li:hover{
+    background-color: var(--bg-color-gray-hover);
+}
+
+
+
+
+.fa-chevron-up{
+    font-size: 10px;
+    vertical-align: middle;
+
+}
+
+/* ********/  BOTTOM CONTOLS ******** */
+
