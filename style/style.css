@@ -80,6 +80,42 @@ button:hover{
 /* ******** / TOP CONTOLS ******** */
 
 
+
+/* ******** MAIN SECTION ******** */
+main{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.user-cam-wrapper{
+    width: calc(100% / 8);
+    height: calc(100% / 5);
+    margin: 2px;
+    overflow: hidden;
+    position: relative;
+}
+.user-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(0,0,0,.5);
+    padding: .2em;
+    gap: 4px;
+}
+.user-name > * {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+
+
+/* ******** / MAIN SECTION ******** */
+
+
 /* ******** BOTTOM CONTOLS ******** */
 .bottom-controls{
     position: fixed;
