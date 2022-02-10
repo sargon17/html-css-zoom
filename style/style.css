@@ -1,0 +1,47 @@
+:root {
+  --bg-color-black: #000000;
+  --bg-color-gray: #222222;
+  --bg-color-clear-grey: #4a4a4a;
+  --bg-color-clear-grey-hover: #6a6a6a;
+  --main-text-color: #ffffff;
+  --zoom-green: #4bc800;
+  --zoom-red: #d10e26;
+}
+
+/* general stiling */
+* {
+  font-family: "Montserrat" Arial, Helvetica, sans-serif;
+  color: var(--main-text-color);
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-color-black);
+  height: 100vh;
+}
+/* / general stiling */
+
+
+/* reusable component */
+.sml-grey-btn {
+  background-color: var(--bg-color-clear-grey);
+  padding: 0.3em 0.5em;
+}
+.sml-grey-btn:hover{
+    background-color: var(--bg-color-clear-grey-hover);
+}
+/*  / reusable component */
+
+/* ******** TOP CONTOLS ******** */
+.top-controls {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.top-controls ul {
+  display: flex;
+}
+.top-controls li {
+  margin: .2em;
+}
+/* ******** / TOP CONTOLS ******** */
