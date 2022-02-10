@@ -33,7 +33,6 @@ button{
     cursor: pointer;
     background: transparent;
     padding: 1em .4em;
-    word-wrap: none;
 }
 button:hover{
     background-color: var(--bg-color-gray-hover);
@@ -60,7 +59,9 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
-
+.column{
+    flex-direction: column;
+}
 .font-size-24{
     font-size: 24px;
 }
@@ -68,7 +69,7 @@ button:hover{
 /* / reusable stiling */
 
 
-/* ******** TOP CONTOLS ******** */
+/* ------ TOP CONTOLS ------ */
 .top-controls {
     position: fixed;
     right: 0;
@@ -77,11 +78,11 @@ button:hover{
 .top-controls li {
   margin: .2em;
 }
-/* ******** / TOP CONTOLS ******** */
+/* ------ / TOP CONTOLS ------ */
 
 
 
-/* ******** MAIN SECTION ******** */
+/* ------ MAIN SECTION ------ */
 main{
     height: 100vh;
     justify-content: center;
@@ -117,10 +118,10 @@ main{
 
 
 
-/* ******** / MAIN SECTION ******** */
+/* ------ / MAIN SECTION ------ */
 
 
-/* ******** BOTTOM CONTOLS ******** */
+/* ------ BOTTOM CONTOLS ------ */
 .bottom-controls{
     position: fixed;
     bottom: 0;
@@ -158,7 +159,7 @@ main{
 .end-btn button{
     padding: 1em 1em;
 }
-.end-btn button:hover *{
+.end-btn button:hover{
     color: var(--zoom-red);
 }
 
@@ -170,5 +171,4 @@ main{
 
 }
 
-/* ********/  BOTTOM CONTOLS ******** */
-
+/* ------ /  BOTTOM CONTOLS ------  */
